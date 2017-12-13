@@ -37,6 +37,7 @@ namespace Tasty
 			return items;
 		}
 
+		//For the future Dani: Improve this method
 		public async Task<IList<RecipeItem>> GetItems(string name)
 		{
 			List<RecipeItem> existingRecipeItems;

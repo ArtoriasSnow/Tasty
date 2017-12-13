@@ -22,6 +22,7 @@ namespace Tasty
 		{
 			var viewModel = BindingContext as RecipeItemViewModel;
 			if (viewModel != null) viewModel.OnAppearing(Parameter);
+
 		}
 
 		protected override void OnDisappearing()

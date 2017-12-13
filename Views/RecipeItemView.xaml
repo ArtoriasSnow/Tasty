@@ -12,8 +12,10 @@
 		<Entry Text="{Binding Item.Country}" />
 		<Label Text="Recommended" />
 		<Switch x:Name="DoneEntry" IsToggled="{Binding Item.Recommended}" />
-		<Button Text="Save" Command="{Binding SaveCommand}" />
-		<Button Text="Delete" Command="{Binding DeleteCommand}" />
-		<Button Text="Cancel" Command="{Binding CancelCommand}" />
+		<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="20">
+			<Button BackgroundColor= "#6FA57A" Text="Save" Command="{Binding SaveCommand}" />
+			<Button BackgroundColor= "Red" Text="Delete" Command="{Binding DeleteCommand}" IsVisible="{Binding State, Mode=TwoWay}" />
+		</StackLayout>
+
 	</StackLayout>
 </ContentPage>
