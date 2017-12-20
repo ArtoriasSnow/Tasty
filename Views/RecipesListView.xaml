@@ -4,13 +4,14 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	x:Class="Tasty.RecipesListView" 
 	Title="Recipes"
-	BackgroundColor="#FFF8E1">
+	BackgroundColor="#fafafa">
 	
 	<ContentPage.ToolbarItems>
 		<ToolbarItem Name="Add" Command="{Binding AddCommand}">
 			<ToolbarItem.Icon>
 				<OnPlatform x:TypeArguments="FileImageSource" Android="plus" />
 			</ToolbarItem.Icon>
+            
 		</ToolbarItem>
 	</ContentPage.ToolbarItems>
 	
@@ -27,7 +28,7 @@
 				<ViewCell>
 					<ViewCell.View>
 						<StackLayout Padding="20,0,20,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-							<Label TextColor="#000051" FontSize="Large" FontAttributes="Bold" Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+							<Label TextColor="#0e0e0f" FontSize="Large" FontAttributes="Bold" Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
 							<Image Source="check.png" HorizontalOptions="End" IsVisible="{Binding Recommended}" />
 						</StackLayout>
 					</ViewCell.View>

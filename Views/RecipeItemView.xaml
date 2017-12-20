@@ -8,9 +8,9 @@
 	<StackLayout VerticalOptions="StartAndExpand" Padding="20">
 		<Label Style="{StaticResource LabelRecipeItemText}" Text="Name" />
 		<Entry Text="{Binding Item.Name}" />
-		<Label Text="Country" />
+		<Label Style="{StaticResource LabelRecipeItemText}" Text="Country" />
 		<Entry Text="{Binding Item.Country}" />
-		<Label Text="Recommended" />
+		<Label Style="{StaticResource LabelRecipeItemText}" Text="Recommended" />
 		<Switch x:Name="DoneEntry" IsToggled="{Binding Item.Recommended}" />
 		<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="20">
 			<Button BackgroundColor= "#6FA57A" Text="Save" Command="{Binding SaveCommand}" />

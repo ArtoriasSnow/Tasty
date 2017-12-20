@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Tasty.App">
+<Application 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Tasty.App">
+    
     <Application.Resources>
         <ResourceDictionary>
             <Style x:Key="LabelRecipeItemText" TargetType="Label">
                 <Setter Property="FontAttributes" Value="Bold" />
                 <Setter Property="FontSize" Value="Large" />
-                <Setter Property="HorizontalOptions" Value="Center" />
-                <Setter Property="TextColor" Value="#83200C" />
+                <Setter Property="HorizontalOptions" />
+                <Setter Property="TextColor" Value="#2286c3" />
+            </Style>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#283593" />
+                <Setter Property="BarTextColor" Value="White" />
             </Style>
         </ResourceDictionary>
     </Application.Resources>
